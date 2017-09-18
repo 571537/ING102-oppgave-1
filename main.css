@@ -54,10 +54,12 @@ ul.many {
 
 .meny a:hover:not(.active) {
     background-color: #111;
+    border-radius: 5px;
 }
 
 .active {
     background-color: #dfb674;
+    border-radius: 5px;
 }
     
 .clearfix{
@@ -66,4 +68,41 @@ ul.many {
 
 .img2{
     float: left;
+}
+.imgMikkel{
+    border-radius: 5px;
+}
+.container-right{
+    width: 60%;
+    float: right;
+}
+.tittel{
+    text-align: center;
+    color: #333333;
+    font-size: 2em;
+    font-weight: 100;
+    /*background-color: #333333; */
+    border-bottom: solid 2px #dfb674;
+}
+.spanTittel{
+    color: #333333;
+}
+#mikkeMatH4{
+    text-align: center;
+    font-weight: 100;
+    border-bottom: solid 2px #333333;
+}
+#listeConatinerLeft{
+    float: left;
+    width: 250px;
+    background-color: #333333;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-right: 35px;
+}
+#listeConatinerRight{
+    float: left;
+    width: 250px;
+    background-color: #dbdcdd;
+    border-radius: 5px;
 }
