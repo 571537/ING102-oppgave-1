@@ -1,4 +1,3 @@
-    
 body {
     font-family: 'Big-caslon', serif; 
     background-color: #f3f3f3;
@@ -35,21 +34,21 @@ body {
     line-height: 32px;
     background-color: #333;
 }
+
 ul.many {
         margin-top: 15px;
-    }
+}
     
 .meny li {
         display: inline; 
         padding: 0 10px 0 10px; 
         font-size: 20px;
-    }
+}
 
 .meny a {
     color: white;
     padding: 8px;
     text-decoration: none;
-    
 }
 
 .meny a:hover:not(.active) {
@@ -66,16 +65,16 @@ ul.many {
     overflow: auto;
 }
 
-.img2{
+.img{
     float: left;
-}
-.imgMikkel{
     border-radius: 5px;
 }
+
 .container-right{
     width: 60%;
     float: right;
 }
+
 .tittel{
     text-align: center;
     color: #333333;
@@ -84,14 +83,17 @@ ul.many {
     /*background-color: #333333; */
     border-bottom: solid 2px #dfb674;
 }
+
 .spanTittel{
     color: #333333;
 }
-#mikkeMatH4{
+
+h4 {
     text-align: center;
     font-weight: 100;
     border-bottom: solid 2px #333333;
 }
+
 #listeConatinerLeft{
     float: left;
     width: 250px;
@@ -100,6 +102,7 @@ ul.many {
     border-radius: 5px;
     margin-right: 35px;
 }
+
 #listeConatinerRight{
     float: left;
     width: 250px;
