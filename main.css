@@ -113,3 +113,13 @@ h4 {
 b {
     color: #dfb674;
 }
+table, th, td{
+    border: solid 1px #dfb674;
+    border-collapse: collapse;
+}
+th{
+    background-color: #dfb674;
+    color: white;
+    font-weight: 100;
+    padding: 10px 0 10px 0;
+}
