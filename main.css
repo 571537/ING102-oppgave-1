@@ -1,23 +1,23 @@
 body {
-    font-family: 'Big-caslon', serif; 
+    font-family: 'Big-caslon', serif;
     background-color: #f3f3f3;
-        
+
 }
 
 #wrapper{
     max-width: 900px;
     margin: 0 auto;
-    background-color: #fff; 
+    background-color: #fff;
     padding: 32px;
 }
-    
+
 .content {
     max-width: 900px;
     margin: auto;
-    background: white; 
+    background: white;
     padding: auto;
 }
-   
+
 .meny {
     max-width: 900px;
     padding: 10px 0 10px 0;
@@ -25,11 +25,11 @@ body {
     line-height: 32px;
     background-color: #333;
 }
-    
+
 .meny li {
-        display: inline; 
-        padding: 0 10px 0 10px; 
-        font-size: 20px;
+    display: inline;
+    padding: 0 10px 0 10px;
+    font-size: 20px;
 }
 
 .meny a {
@@ -43,11 +43,15 @@ body {
     border-radius: 5px;
 }
 
+.meny a:hover {
+    color: white;
+}
+
 .active {
     background-color: #dfb674;
     border-radius: 5px;
 }
-    
+
 .clearfix{
     overflow: auto;
 }
@@ -94,12 +98,9 @@ h4 {
     border-radius: 5px;
 }
 a {
-   color: #000000;
+    color: #000000;
 }
 a:hover {
-   color: white;
-}
-ul a:hover {
     color: #333333;
 }
 b {
@@ -114,4 +115,8 @@ th{
     color: white;
     font-weight: 100;
     padding: 10px 0 10px 0;
+}
+
+.infoTxt {
+    font-size: 18px;
 }
