@@ -127,3 +127,20 @@ th{
 .youtubeConatiner{
     width: 100%;
 }
+#lastNed{
+    border-radius: 5px;
+    background-color: #333333;
+    border-style: none;
+    width: 10em;
+    height: 4em;
+    margin: 0 auto 0 auto;
+    display: block;
+}
+#lastNed:hover{
+    background-color: #111111;
+}
+#lastNed a{
+    color: #dfb674;
+    text-decoration: none;
+    padding: 1.8em 1.4em 1.8em 1.4em;
+}
