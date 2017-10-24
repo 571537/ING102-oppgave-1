@@ -133,9 +133,10 @@ th{
     border-style: none;
     width: 10em;
     height: 4em;
-    margin: 0 auto 0 auto;
+    margin: 0 auto 5px auto;
     display: block;
 }
+
 #lastNed:hover{
     background-color: #111111;
 }
@@ -143,4 +144,27 @@ th{
     color: #dfb674;
     text-decoration: none;
     padding: 1.8em 1.4em 1.8em 1.4em;
+}#lastNed2 {
+     border-radius: 5px;
+     background-color: #333333;
+     border-style: none;
+     display: inline-block;
+     width: 10em;
+     height: 4em;
+     margin: 0 0 0 0;
+ }
+#lastNed2:hover{
+    background-color: #111111;
+}
+#lastNed2 a {
+    color: #dfb674;
+    text-decoration: none;
+    padding: 1.8em 1.4em 1.8em 1.4em;
+}
+div.fixed {
+    position: fixed;
+    border-radius: 5px;
+    bottom: 0;
+    padding: 5px;
+    background-color: #dfb674;
 }
