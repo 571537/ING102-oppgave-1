@@ -9,7 +9,7 @@
 <div id="wrapper">
     <div class="content">
         <header>
-            <img src="bilder/studentportalenHEADER.jpg" alt="Header" style="width: 900px; height: 400px;">
+            <img id="forsideBilde" src="bilder/studentportalenHEADER.jpg" alt="Header" style="width: 900px; height: 400px;">
         </header>
 
         <nav>
@@ -24,8 +24,9 @@
     </div>
 
     <article>
-        <div class="clearfix">
-            <img class="img" src="bilder/gruppe.jpg" alt="gruppebilde" style="width:100%;">
+        <div class="clearfix" id="header">
+            <img class="img" id="gruppeBilde" src="bilder/gruppe.jpg" alt="gruppebilde" style="width:100%;">
+            <h3 id="popup" style="display: none">Dette er et bilde av gruppens medlemmer</h3>
                 <h1 class="tittel">Om oss fra Studentportalen:</h1>
                 <p>Vi er 3 stykker som studerer IT og dataingeniør ved Høgskolen på Vestlandet - Campus Bergen. Vi er gruppe nummer 13.</p>
         </div>
@@ -54,6 +55,16 @@
     </article>
 
 </div>
+
+<script>
+    var e = document.getElementById('gruppeBilde');
+    e.onmouseover = function() {
+        document.getElementById('popup').style.display = 'block';
+    };
+    e.onmouseout = function() {
+        document.getElementById('popup').style.display = 'none';
+    }
+</script>
 
 </body>
 </html>

@@ -168,3 +168,30 @@ div.fixed {
     padding: 5px;
     background-color: #dfb674;
 }
+#demo{
+    padding-bottom: 200px;
+}
+#popup{
+    color: white;
+    background-color: #333333;
+    font-weight: 100;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 0 5px 0;
+}
+.lastinn{
+    width: 100%;
+}
+.lastInnKnapper{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #333333;
+    margin: 10px auto 10px auto;
+    color: #dfb674;
+    border: none;
+    display: block;
+}
+.lastInnKnapper:hover{
+    background-color: #111111;
+    cursor: pointer;
+}
