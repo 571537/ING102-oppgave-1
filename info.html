@@ -28,17 +28,19 @@
 
     <article>
         <div id="content">
-        <div class="fixed"><button id="lastNed" ><a href="#" download=> Last ned Statusrapport </a> </button>
-            <button id="lastNed2" ><a href="Arbeidskontrakt.pdf" download>Last ned Prosjektplan</a></button>
+        <div class="fixed"><button id="lastNed" ><a href="Prosjektplan.pdf" download> Last ned Prosjektplan</a> </button>
+            <button id="lastNed2" ><a href="Arbeidskontrakt.pdf" download>Last ned Arbeidskontrakt</a></button>
         </div>
         <div class="LastInn">
-            <button class="lastInnKnapper" onclick="loadDoc()">Last inn Om prosjektet fra XML</button>
-            <button class="lastInnKnapper" onclick="">Last inn statusrapport fra XML</button>
+            <button class="lastInnKnapper" id="loadDoc" onclick="loadDoc()">Last inn Om prosjektet fra XML</button>
+            <button class="lastInnKnapper" id="hideDoc" onclick="hideDoc()">Lukk info om prosjektet</button>
+           <!-- <button class="lastInnKnapper" onclick="">Last inn statusrapport fra XML</button> -->
+            <button class="lastInnKnapper" id="seBilde" onclick="seBildet()">Se vårt Gantt Skjema</button>
+            <button class="lastInnKnapper" id="lukkBilde" onclick="lukkBildet()">Lukk bildet</button>
         </div>
-        <!--
-        <script>
-            loadDoc();
-        </script>  -->
+            <div id="ganttContainer">
+                <img src="bilder/GanttCropped.png" alt="Bilde av Gantt Skjema" style="width: 100%; margin-top: 50px">
+            </div>
         <div id="demo"></div>
         </div>
     </article>
