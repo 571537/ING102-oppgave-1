@@ -1,3 +1,5 @@
+
+
 function loadDoc() {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
@@ -26,3 +28,5 @@ function loadDoc() {
         }
         document.getElementById("demo").innerHTML = testContent;
     }
+
+

@@ -1,7 +1,6 @@
 body {
-    font-family: 'Big-caslon', serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f3f3f3;
-
 }
 
 #wrapper{
@@ -30,6 +29,7 @@ body {
     display: inline;
     padding: 0 10px 0 10px;
     font-size: 20px;
+    letter-spacing: 2px;
 }
 
 .meny a {
@@ -71,6 +71,7 @@ body {
     color: #333333;
     font-size: 2em;
     font-weight: 100;
+    /*background-color: #333333; */
     /*background-color: #333333; */
     border-bottom: solid 2px #dfb674;
 }
@@ -195,3 +196,16 @@ div.fixed {
     background-color: #111111;
     cursor: pointer;
 }
+.sticky {
+    position: fixed;
+    top: -16px;
+    width: 100%;
+    padding-top: 0;
+}
+#navbar{
+    overflow: hidden;
+    -webkit-margin-before:0em;
+    -webkit-margin-after:0em;
+}
+
+

@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <script src="script.js"></script>
 </head>
-<body>
+<body onscroll="scrollFunction()">
 <div id="wrapper">
     <div class="content">
         <header>
@@ -14,6 +14,7 @@
         </header>
 
         <nav>
+            <div id="navbar">
             <ul class="meny">
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="Bonn.html">Bonn</a></li>
@@ -21,12 +22,13 @@
                 <li><a href="ingebrigt.html">Ingebrigt</a></li>
                 <li><a class="active" href="#">Om prosjektet</a></li>
             </ul>
+            </div>
         </nav>
     </div>
 
     <article>
-        <!--<button onclick="loadDoc()">Last inn mer</button>-->
-        <div class="fixed"><button id="lastNed" ><a herf ="#" download=> Last ned Statusrapport </a> </button>
+        <div id="content">
+        <div class="fixed"><button id="lastNed" ><a href="#" download=> Last ned Statusrapport </a> </button>
             <button id="lastNed2" ><a href="Arbeidskontrakt.pdf" download>Last ned Prosjektplan</a></button>
         </div>
         <div class="LastInn">
@@ -38,9 +40,28 @@
             loadDoc();
         </script>  -->
         <div id="demo"></div>
+        </div>
     </article>
-
+    </div>
 </div>
+<script>
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function scrollFunction() {
+        if (window.pageYOffset >= sticky+16) {
+            navbar.classList.add("sticky");
+            document.getElementById("content").style.paddingTop = "85px";
+        } else {
+            navbar.classList.remove("sticky");
+            document.getElementById("content").style.paddingTop = "0";
+        }
+    }
+</script>
 
 </body>
 </html>

@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <title>Forside</title>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="script.js"></script>
 </head>
-<body>
+<body onscroll="scrollFunction()">
 <div id="wrapper">
     <div class="content">
+
+        <!-- HEADER BILDE -->
+
         <header>
             <img id="forsideBilde" src="bilder/studentportalenHEADER.jpg" alt="Header" style="width: 900px; height: 400px;">
         </header>
 
+        <!-- HEADER STOP -->
+
+        <!-- NAVBAR START  -->
+
         <nav>
+            <div id="navbar">
             <ul class="meny">
                 <li><a class="active" href="#">Hjem</a></li>
                 <li><a href="Bonn.html">Bonn</a></li>
@@ -20,10 +29,18 @@
                 <li><a href="ingebrigt.html">Ingebrigt</a></li>
                 <li><a href="info.html">Om prosjektet</a></li>
             </ul>
+                </div>
         </nav>
+
+        <!-- NAVBAR STOPP -->
+
+
     </div>
 
+    <!-- HOVEDINNHOLD START -->
+
     <article>
+        <div id="content">
         <div class="clearfix" id="header">
             <img class="img" id="gruppeBilde" src="bilder/gruppe.jpg" alt="gruppebilde" style="width:100%;">
             <h3 id="popup" style="display: none">Dette er et bilde av gruppens medlemmer</h3>
@@ -52,7 +69,10 @@
                 <td>20</td>
             </tr>
         </table>
+        </div>
     </article>
+
+    <!-- HOVEDINNHOLD STOPP -->
 
 </div>
 
@@ -60,11 +80,32 @@
     var e = document.getElementById('gruppeBilde');
     e.onmouseover = function() {
         document.getElementById('popup').style.display = 'block';
+        //document.getElementsByClassName('nav').style.paddingTop = '0';
     };
     e.onmouseout = function() {
         document.getElementById('popup').style.display = 'none';
     }
 </script>
+
+<script>
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function scrollFunction() {
+        if (window.pageYOffset >= sticky+16) {
+            navbar.classList.add("sticky");
+            document.getElementById("content").style.paddingTop = "85px";
+        } else {
+            navbar.classList.remove("sticky");
+            document.getElementById("content").style.paddingTop = "0";
+        }
+    }
+</script>
+
 
 </body>
 </html>

@@ -5,7 +5,7 @@
     <title>Ingebrigt S. Holstad</title>
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
-<body>
+<body onscroll="scrollFunction()">
 <div id="wrapper">
     <div class="content">
         <header>
@@ -13,6 +13,7 @@
         </header>
 
         <nav>
+            <div id="navbar">
             <ul class="meny">
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="Bonn.html">Bonn</a></li>
@@ -20,10 +21,12 @@
                 <li><a class="active" href="#">Ingebrigt</a></li>
                 <li><a href="info.html">Om prosjektet</a></li>
             </ul>
+            </div>
         </nav>
     </div>
 
     <article>
+        <div id="content">
         <div class="clearfix">
             <img class ="img" src="bilder/ingebrigt.jpg" alt="bildeBrikt" style="width:330px;">
             <div class="container-right">
@@ -90,9 +93,29 @@
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/XSMirLxfUik" frameborder="0" allowfullscreen></iframe>            </div>
                 </div>
             </div>
+        </div>
     </article>
 
 </div>
+<script>
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function scrollFunction() {
+        if (window.pageYOffset >= sticky+16) {
+            navbar.classList.add("sticky");
+            //Adding some padding so the transition is smooth
+            document.getElementById("content").style.paddingTop = "85px";
+        } else {
+            navbar.classList.remove("sticky");
+            document.getElementById("content").style.paddingTop = "0";
+        }
+    }
+</script>
 
 </body>
 </html>
