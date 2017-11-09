@@ -27,10 +27,18 @@
     </div>
 
     <article>
+
+        <!-- STICKY KNAPP MED LAST NED FUNKSJONER -->
         <div id="content">
-        <div class="fixed"><button id="lastNed" ><a href="Prosjektplan.pdf" download> Last ned Prosjektplan</a> </button>
+        <div class="fixed">
+            <!-- Last ned prosjektplanen -->
+            <button id="lastNed" ><a href="Prosjektplan.pdf" download> Last ned Prosjektplan</a>
+            </button>
+            <!-- Last ned Arbeidskontrakten -->
             <button id="lastNed2" ><a href="Arbeidskontrakt.pdf" download>Last ned Arbeidskontrakt</a></button>
         </div>
+
+            <!-- Knapper som laster inn info fra XML fil, eller et bilde  -->
         <div class="LastInn">
             <button title="Last inn informasjon" class="lastInnKnapper" id="loadDoc" onclick="loadDoc()">Last inn Om prosjektet fra XML</button>
             <button title="Ta vekk informasjon" class="lastInnKnapper" id="hideDoc" onclick="hideDoc()">Lukk info om prosjektet</button>
