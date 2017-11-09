@@ -12,7 +12,6 @@ body {
     max-width: 100%;
     margin: auto;
     background: white;
-    padding: auto;
 }
 .meny {
     max-width: 100%;
@@ -118,40 +117,23 @@ th{
 .youtubeConatiner{
     width: 100%;
 }
-#lastNed{
+.lastNed{
+    text-align: center;
+    color: #dfb674;
     border-radius: 5px;
     background-color: #333333;
     border-style: none;
     width: 10em;
-    height: 4em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     margin: 0 auto 5px auto;
     display: block;
 }
 
-#lastNed:hover{
+.lastNed:hover{
     background-color: #111111;
-}
-#lastNed a{
-    color: #dfb674;
-    text-decoration: none;
-    padding: 1.8em 1.4em 1.8em 1.4em;
-}
-#lastNed2 {
-     border-radius: 5px;
-     background-color: #333333;
-     border-style: none;
-     display: inline-block;
-     width: 10em;
-     height: 4em;
-     margin: 0 0 0 0;
- }
-#lastNed2:hover{
-    background-color: #111111;
-}
-#lastNed2 a {
-    color: #dfb674;
-    text-decoration: none;
-    padding: 1.8em 1.4em 1.8em 1.4em;
+    cursor: pointer;
+    transition: 0.5s ease;
 }
 div.fixed {
     position: fixed;
@@ -159,6 +141,9 @@ div.fixed {
     bottom: 0;
     padding: 5px;
     background-color: #dfb674;
+}
+.fixed a{
+    color: #dfb674;
 }
 #demo{
     padding-bottom: 200px;
@@ -186,7 +171,6 @@ div.fixed {
 }
 .lastInnKnapper:hover{
     background-color: #111111;
-    cursor: pointer;
 }
 .sticky {
     position: fixed;
