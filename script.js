@@ -33,16 +33,19 @@ function loadDoc() {
         document.getElementById("demo").innerHTML = testContent;
     }
 
+//Funksjon som viser bildet, ved å endre på css
 function seBildet() {
         document.getElementById("ganttContainer").style.display = "block";
         document.getElementById("seBilde").style.display = "none";
         document.getElementById("lukkBilde").style.display = "block";
 }
+//Skjuler bildet ved hjelp av css
 function lukkBildet() {
     document.getElementById("ganttContainer").style.display = "none";
     document.getElementById("seBilde").style.display = "block";
     document.getElementById("lukkBilde").style.display = "none";
 }
+//sjuler informasjonen hentet fra XML
 function hideDoc() {
     document.getElementById("demo").style.display = "none";
     document.getElementById("loadDoc").style.display = "block";
