@@ -39,7 +39,7 @@ body {
 }
 
 .meny a:hover:not(.active) {
-    background-color: #111;
+    background-color: #333333;
     border-radius: 5px;
 }
 
@@ -48,8 +48,7 @@ body {
 }
 
 .active {
-    background-color: #dfb674;
-    border-radius: 5px;
+    border-bottom: solid 1px #dfb674;
 }
 
 .clearfix{
