@@ -2,42 +2,36 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f3f3f3;
 }
-
 #wrapper{
-    max-width: 900px;
+    max-width: 75%;
     margin: 0 auto;
     background-color: #fff;
     padding: 32px;
 }
-
 .content {
-    max-width: 900px;
+    max-width: 100%;
     margin: auto;
     background: white;
     padding: auto;
 }
-
 .meny {
-    max-width: 900px;
+    max-width: 100%;
     padding: 10px 0 10px 0;
     text-align: left;
     line-height: 32px;
     background-color: #333;
 }
-
 .meny li {
     display: inline;
     padding: 0 10px 0 10px;
     font-size: 20px;
     letter-spacing: 2px;
 }
-
 .meny a {
     color: white;
     padding: 8px;
     text-decoration: none;
 }
-
 .meny a:hover:not(.active) {
     background-color: #333333;
     border-radius: 5px;
@@ -45,6 +39,7 @@ body {
 
 .meny a:hover {
     color: #989898;
+    transition: .5s ease;
 
 }
 
@@ -52,21 +47,17 @@ body {
     border-bottom: solid 1px #dfb674;
 
 }
-
 .clearfix{
     overflow: auto;
 }
-
 .img{
     float: left;
     border-radius: 5px;
 }
-
 .container-right{
     width: 60%;
     float: right;
 }
-
 .tittel{
     text-align: center;
     color: #333333;
@@ -200,8 +191,9 @@ div.fixed {
 .sticky {
     position: fixed;
     top: -16px;
-    width: 100%;
+    width: 70%;
     padding-top: 0;
+    z-index: 9;
 }
 #navbar{
     overflow: hidden;
@@ -234,7 +226,7 @@ div.fixed {
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 100%;
     position: relative;
     margin: auto;
 }

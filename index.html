@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Forside</title>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="icon" href="bilder/logo.png">
     <script src="script.js"></script>
 </head>
 <body onscroll="scrollFunction()">
@@ -14,7 +15,7 @@
         <!-- HEADER BILDE -->
 
         <header>
-            <img id="forsideBilde" src="bilder/studentportalenHEADER.jpg" alt="Header" style="width: 900px; height: 400px;">
+            <img id="forsideBilde" src="bilder/studentportalenHEADER.jpg" alt="Header" style="width: 100%;">
         </header>
 
         <!-- HEADER STOP -->
@@ -44,54 +45,6 @@
 
 
         <div id="content">
-            <!-- Tester slideshow -->
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <div class="numbertext">1 / 5</div>
-                    <img src="bilder/studportForside.PNG" style="width:100%">
-                    <div class="text">Forsiden på gruppens prosjektside</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">2 / 5</div>
-                    <img src="bilder/studportForside2.PNG" style="width:100%">
-                    <div class="text">Enda et bilde av forsiden</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">3 / 5</div>
-                    <img src="bilder/studportEmner.PNG" style="width:100%">
-                    <div class="text">Siden hvor du kan søke etter emner</div>
-                </div>
-
-                <div class="mySlides fade">
-                    <div class="numbertext">4 / 5</div>
-                    <img src="bilder/studportFag.PNG" style="width:100%">
-                    <div class="text">Her er siden til faget DAT100</div>
-                </div>
-                <div class="mySlides fade">
-                    <div class="numbertext">5 / 5</div>
-                    <img src="bilder/studportFag2.PNG" style="width:100%">
-                    <div class="text">Viser litt om hvordan dette faget er vurdert</div>
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-            </div>
-            <br>
-
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-                <span class="dot" onclick="currentSlide(5)"></span>
-            </div>
-
-
-
-            <!-- Tester slutt -->
-
 
         <div class="clearfix" id="header">
             <img class="img" id="gruppeBilde" src="bilder/gruppe.jpg" alt="gruppebilde" style="width:100%;">
@@ -157,37 +110,6 @@
             navbar.classList.remove("sticky");
             document.getElementById("content").style.paddingTop = "0";
         }
-    }
-</script>
-
-<script>
-    <!-- Slideshow -->
-
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" activeSlide", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " activeSlide";
     }
 </script>
 
