@@ -45,10 +45,12 @@ body {
 
 .meny a:hover {
     color: #989898;
+
 }
 
 .active {
     border-bottom: solid 1px #dfb674;
+
 }
 
 .clearfix{
