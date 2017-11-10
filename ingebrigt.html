@@ -8,12 +8,17 @@
     <script src="script.js"></script>
 </head>
 <body onscroll="scrollFunction()">
-<div id="wrapper">
-    <div class="content">
+
+<div id="wrapper"> <!-- Oppretter en stor hvit boks som alt annet skal ligge inni. -->
+    <div class="content"> <!-- Oppretter ny boks inni wrapperen. Denne inneholder header og navbar. -->
+
+        <!-- HEADER BILDE -->
         <header>
             <img src="bilder/studentportalenHEADER.jpg" alt="headerBilde" style="width: 100%">
         </header>
+        <!-- HEADER STOPP -->
 
+        <!-- NAVBAR START -->
         <nav>
             <div id="navbar">
             <ul class="meny">
@@ -25,12 +30,17 @@
             </ul>
             </div>
         </nav>
+        <!-- NAVBAR STOPP -->
     </div>
+    <!-- slutt -->
 
+    <!-- HOVEDINNHOLD START -->
     <article>
-        <div id="content">
         <div class="clearfix">
+            <!-- Legger inn bilde av Ingebrigt. -->
             <img class ="img" src="bilder/ingebrigt.jpg" alt="bildeBrikt" style="width:330px;">
+
+            <!-- HØYRESIDE START -->
             <div class="container-right">
                 <h1 class="tittel">Ingebrigt Stene Holstad</h1>
                 <p><span><b>Navn: </b></span>Ingebrigt Stene Holstad</p>
@@ -38,6 +48,8 @@
                 <p><span><b>Fødested: </b></span>Stavanger</p>
                 <p>Mitt navn er Ingebrigt Stene Holstad, jeg er 20 år og kommer fra Karmøy (øy litt i utkanten av Haugesund). På fritiden liker jeg å være med venner, trene, høre på musikk, se serie og spille videospill sammen venner.</p>
                 <h4>Ingebrigt favoritter</h4>
+
+                <!-- VENSTRELISTE START -->
                 <div id="listeConatinerLeft">
                     <ul>
                         <li>Middag
@@ -62,6 +74,9 @@
                         </li>
                     </ul>
                 </div>
+                <!-- VENSTRELISTE STOPP -->
+
+                <!-- HØYRELISTE START -->
                 <div id="listeConatinerRight">
                     <ul>
                         <li>Musikksjanger
@@ -86,19 +101,26 @@
                             </ul>
                         </li>
                     </ul>
-
                 </div>
-
+                <!-- HØYRELISTE STOPP -->
             </div>
+            <!-- HØYRESIDE STOPP -->
+
+            <!-- YOUTUBE START -->
             <div class="youtubeConatiner">
                 <div class="youtube">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/XSMirLxfUik" allowfullscreen></iframe>            </div>
                 </div>
             </div>
+            <!-- YOUTUBE STOPP -->
+
         </div>
     </article>
+    <!-- HOVEDINNHOLD SLUTT -->
 
 </div>
+<!-- Avslutter wrapperen. -->
+
 <script>
     // Get the navbar
     var navbar = document.getElementById("navbar");

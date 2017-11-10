@@ -219,7 +219,7 @@ div.fixed {
     display: none;
 }
 
-/* Next & previous buttons */
+/* Neste og tilbake knapper  */
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -234,20 +234,20 @@ div.fixed {
     border-radius: 0 3px 3px 0;
 }
 
-/* Position the "next button" to the right */
+/* Posisjonen til "neste" knappen til høyre  */
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* Når peker er på knapp, legg til svart bakgrunn med litt gjennomsiktig */
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
+/* tekst til bilde */
 .text {
-    background-color: #333333;
+    background-color: rgba(0,0,0,0.6);
     color: #f2f2f2;
     font-size: 15px;
     padding: 8px 12px;
@@ -257,7 +257,7 @@ div.fixed {
     text-align: center;
 }
 
-/* Number text (1/3 etc) */
+/* Nummer tekst (1/3 osv) */
 .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -266,7 +266,7 @@ div.fixed {
     top: 0;
 }
 
-/* The dots/bullets/indicators */
+/* Prikkene under bilde som viser hvor du er i slideshowet */
 .dot {
     cursor:pointer;
     height: 15px;
@@ -282,7 +282,7 @@ div.fixed {
     background-color: #717171;
 }
 
-/* Fading animation */
+/* overgangen mellom bildene "fading" */
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;

@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <!-- Navnet på denne siden, teksten som kommer opp når når siden er oppe i fanen.-->
     <title>Bonn Aarsheim</title>
      <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="icon" href="bilder/logo.png">
@@ -9,46 +10,47 @@
 </head>
     
 <body onscroll="scrollFunction()">
-<div id="wrapper">
-<div class="content">
+<div id="wrapper">  <!-- Den ytterste hvite "boksen" som alt ligger inni.-->
+<div class="content"> <!--Dette er en boks som inneholder navbaren og headeren -->
 
 <header>
     <img src="bilder/studentportalenHEADER.jpg" alt="headerBilde" style="width: 100%">
 
 </header>
 
+
+    <!-- Oppretter her navbaren -->
 <nav>
     <div id="navbar">
-    <ul class="meny">
-  <li><a title="Gå til forsiden" href="index.html">Hjem</a></li>
+    <ul class="meny"><!--Oppretter en liste som vi som vi utformer til en navbar i CSS. -->
+  <li><a title="Gå til forsiden" href="index.html">Hjem</a></li>  <!--En av knappene i navbaren, her linker vi til siden og setter tekst på knappen-->
   <li><a class="active" href="#">Bonn</a></li>
   <li><a title="Mikkel sin side" href="mikkel.html">Mikkel</a></li>
   <li><a title="Ingebrigt sin side" href="ingebrigt.html">Ingebrigt</a></li>
   <li><a title="Få mer innformasjon om gruppens prosjekt" href="info.html">Om prosjektet</a></li>
-</ul>
+</ul>       <!--avslutter listen  -->
     </div>
     </nav>
-    </div>
+    <!-- Avslutter meny-->
+    </div>  <!-- Her slutter boksen som inneholder navbar og header-->
    
-<article>
-    <div id="content">
-   
+<article> <!-- innholdet på nettsiden-->
     <div class="clearfix">
-    <img class ="img" src="bilder/JTFP7131.jpg" alt="bonnBilde" style="width:330px;height:430px;">
-       <div class="container-right">
+    <img class ="img" src="bilder/JTFP7131.jpg" alt="bonnBilde" style="width:330px;height:430px;"> <!-- legger inn et bilde av Bonn-->
+       <div class="container-right">  <!-- Setter innholdet til høyre i siden, slik at den kommer ved siden av bildet. -->
 
-                <h1 class="tittel">Bonn <span class="spanTittel">Aarsheim</span></h1>
-                <p><span><b>Navn: </b></span>Bonn Benyapha Aarsheim</p>
+                <h1 class="tittel">Bonn <span class="spanTittel">Aarsheim</span></h1> <!-- Tittle på innholdet, navnet -->
+                <p><span><b>Navn: </b></span>Bonn Benyapha Aarsheim</p>     <!-- Informasjon om navn, alder og Fra-->
                 <p><span><b>Alder: </b></span>21 år</p>
                 <p><span><b>Frå: </b></span>Stadlandet</p>
                 <p> Eg er fødd i 1996, har vakse opp på ein liten plass på vestlandet som heiter Stadlandet. Etter ungdomsskule på Stadt, flytta eg til Nordfjordeid for å gå på vidaregåande skule. Fullførte 3 år på studiespessialisering, bestemte meg så for å sette studie på vent og reiste samme sommaren for å avtjene førsteganstjenesten i luftforsvaret. Starta hausten 2016 på realfagskurs til ingeniør i Bergen, og no studera eg dataingeniør på Høgskolen på Vestlandet i Bergen. </p>
 
                 <h4>Bonns favoritter</h4>
-                <div id="listeConatinerLeft">
-                    <ul>
-                        <li>Middag
-                            <ul>
-                                <li>Sushi</li>
+                <div id="listeConatinerLeft"> <!-- boksen til venstre som inneholder punkter. CSS bestemmer hvordan denne skal se ut -->
+                    <ul>        <!-- Starter listen -->
+                        <li>Middag <!-- punkter -->
+                            <ul> <!-- ny liste -->
+                                <li>Sushi</li>  <!--punkter i den nye listen -->
                                 <li>Taco</li>
                                 <li>Pizza</li>
                             </ul>
@@ -70,9 +72,9 @@
                                 <li>Paris</li>
                                 <li>Bangkok</li>
                             </ul>
-                    </ul>
+                    </ul>   <!-- Avslutter listen i boksen -->
                 </div>
-                <div id="listeConatinerRight">
+                <div id="listeConatinerRight"> <!-- Boksen til listen som ligger til høyre med informasjon om musikk-->
                     <ul>
                         <li>Band
                             <ul>
@@ -94,7 +96,7 @@
         </div>
     </div>
     </article>
-    </div>
+    </div>      <!--  Her svslutter vi boksen som alt ligger inn i. -->
 <script>
     // Get the navbar
     var navbar = document.getElementById("navbar");
