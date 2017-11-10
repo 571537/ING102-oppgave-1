@@ -74,7 +74,7 @@ h4 {
 
 #listeConatinerLeft{
     float: left;
-    width: 250px;
+    width: 45%;
     background-color: #333333;
     color: #ffffff;
     border-radius: 5px;
@@ -83,7 +83,7 @@ h4 {
 
 #listeConatinerRight{
     float: left;
-    width: 250px;
+    width: 45%;
     background-color: #dbdcdd;
     border-radius: 5px;
 }
@@ -138,12 +138,18 @@ th{
 div.fixed {
     position: fixed;
     border-radius: 5px;
-    bottom: 0;
+    bottom: 1%;
+    left: 1%;
     padding: 5px;
     background-color: #dfb674;
 }
 .fixed a{
     color: #dfb674;
+    text-decoration: none;
+}
+.fixed a:hover{
+    color: white;
+    transition: 0.5s ease;
 }
 #demo{
     padding-bottom: 200px;
@@ -201,6 +207,22 @@ div.fixed {
 }
 .margin-top{
     margin-top:30px;
+}
+#studPortLink{
+    text-decoration: none;
+}
+#studPortLink h3{
+    display: block;
+    text-align: center;
+    background-color: #073650;
+    color: #dfb674;
+    padding: 1%;
+    border-radius: 5px;
+}
+#studPortLink h3:hover{
+    background-color: #07516e;
+    color: white;
+    transition: 0.3s ease;
 }
 
 

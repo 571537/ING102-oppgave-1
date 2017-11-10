@@ -34,6 +34,9 @@
     <article>
         <div id="content">
             <br>
+            <!-- Setter target="_blank" i linken for at den skal aapnes i ny fane -->
+            <a id="studPortLink" target="_blank" href="http://skrulling.pythonanywhere.com"><h3>Besøk Studentportalens sider</h3></a>
+            <br>
             <h1 class="tittel">Bildekarusell som viser skjermbilder fra Studentportalen sin sider</h1>
             <br>
         <!-- Tester slideshow -->
@@ -91,6 +94,8 @@
             <a class="lastNed" href="Prosjektplan.pdf" download>Last ned Prosjektplan</a>
             <!-- Last ned Arbeidskontrakten -->
             <a class="lastNed" href="Arbeidskontrakt.pdf" download>Last ned Arbeidskontrakt</a>
+            <!-- Last ned sluttrapporten -->
+            <a class="lastNed" href="Sluttrapport%20gruppe%2013.pdf" download>Last ned Sluttrapporten</a>
         </div>
 
         <br><br>
@@ -119,6 +124,7 @@
 
     // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
     function scrollFunction() {
+
         if (window.pageYOffset >= sticky+16) {
             navbar.classList.add("sticky");
             document.getElementById("content").style.paddingTop = "85px";
